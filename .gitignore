@@ -1,0 +1,33 @@
+# Environment files
+.env
+
+# Database files
+*.db
+*.sqlite3
+
+# Cache files
+*.pyc
+
+# IDE and virtual environment files
+__pycache__/
+.idea/
+.venv/
+
+# Local configuration
+local_settings.py
+
+# Documentation
+build/
+dist/
+.docset/
+docs/source/build/
+
+# Coverage reports
+.coverage
+
+# Test database
+test.db
+
+# Temporary django files
+*.log
+*.pot
