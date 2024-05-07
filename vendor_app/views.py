@@ -14,6 +14,7 @@ class PurchaseOrderViewSet(viewsets.ModelViewSet):
     serializer_class = PurchaseOrderSerializer
 class VendorPerformanceViewSet(viewsets.ViewSet):
     def retrieve(self, request, pk=None):
+        
         vendor = Vendor.objects.get(pk=pk)
         completed_pos = PurchaseOrder.objects.filter(vendor=vendor, status='completed')
         total_pos = PurchaseOrder.objects.filter(vendor=vendor)

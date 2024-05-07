@@ -28,4 +28,5 @@ router.register(r'vendor_performance', VendorPerformanceViewSet, basename='vendo
 urlpatterns = [
     path('api/', include(router.urls)),
     path('', home),
+    path('api/vendors/<int:pk>/performance/', VendorPerformanceViewSet.as_view({'get': 'retrieve'}))
 ]
